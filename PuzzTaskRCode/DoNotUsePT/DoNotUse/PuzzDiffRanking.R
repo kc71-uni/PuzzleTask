@@ -1,0 +1,6 @@
+library(psychometric)
+library(readr)
+data <- read_csv("ItemAnalysis.csv")
+item.exam(data[2:21], discrim = TRUE)
+item.exam(data[23:42], discrim = TRUE)
+item.exam(data[44:63], discrim = TRUE)
